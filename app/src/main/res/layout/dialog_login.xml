@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="登录"
+                android:textColor="@color/homeTextColor_Pre"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/login_dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/ic_login_close" />
+
+        </RelativeLayout>
+
+        <!--输入手机号码-->
+        <AutoCompleteTextView
+            android:id="@+id/login_dialog_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="#00000000"
+            android:completionThreshold="3"
+            android:cursorVisible="false"
+            android:dropDownHeight="wrap_content"
+            android:dropDownSelector="#CCC"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/homeTextColor_Pre"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <!--下划线-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorAccent" />
+
+        <!--下一步-->
+        <Button
+            android:id="@+id/login_dialog_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button_no_style"
+            android:enabled="false"
+            android:text="下一步"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!--更多登录方式-->
+        <LinearLayout
+            android:id="@+id/login_dialog_moreLoginType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/tab_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多登录方式"
+                android:textColor="#111"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/triangle_forward_black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

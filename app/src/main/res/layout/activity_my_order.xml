@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+    <!--Title+Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <!--返回-->
+            <LinearLayout
+                android:id="@+id/myOrder_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_arrow_back_black_24dp" />
+
+            </LinearLayout>
+
+            <!--我的订单-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="我的订单"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <!--Bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--全部-->
+                <LinearLayout
+                    android:id="@+id/myOrder_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_all_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--待付款-->
+                <LinearLayout
+                    android:id="@+id/myOrder_notPay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_notPay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待付款"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--待发货-->
+                <LinearLayout
+                    android:id="@+id/myOrder_notSend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_notSend_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待发货"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--待收货-->
+                <LinearLayout
+                    android:id="@+id/myOrder_notReceive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_notReceive_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待收货"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--待评价-->
+                <LinearLayout
+                    android:id="@+id/myOrder_notEvaluate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_notEvaluate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待评价"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--已完成-->
+                <LinearLayout
+                    android:id="@+id/myOrder_over"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/myOrder_over_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已完成"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--下划线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp">
+
+                <ImageView
+                    android:id="@+id/myOrder_tabLine"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.wpl.rosesale.SourceCode.NoPreloadViewPager
+        android:id="@+id/myOrder_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

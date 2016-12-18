@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EEEEEE</color>
+    <color name="colorPrimaryDark">#DDDDDD</color>
+    <color name="colorAccent">#000000</color>
+    <color name="drakBG">#000</color>
+
+    <color name="homeTextColor_No">#959595</color>
+    <color name="homeTextColor_Pre">#2e2e2e</color>
+    <color name="pageBG">#EEEEEE</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="background_Pre">#EEE</color>
+    <color name="background_No">#FFF</color>
+
+
+
+    <color name="red">#f5c662</color>
+    <color name="blue">#96cff7</color>
+</resources>

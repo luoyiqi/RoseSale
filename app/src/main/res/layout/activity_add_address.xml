@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Title-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/addAddress_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <!--新增地址-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="新增地址"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/addAddress_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addAddress_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="收货人姓名"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="电话"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="邮编（选填）"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="省份"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="城市"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_county"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="区/县"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/addAddress_detailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="详细地址"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

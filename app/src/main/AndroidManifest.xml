@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wpl.rosesale">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <!--supportsRtl:禁止横屏-->
+    <application
+        android:name=".MyApplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lunch_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3ff2ea024acbdb1c87697c2b1becaca7" />
+
+        <activity
+            android:name=".Activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService"></service>
+
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activity.MeInfoActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activity.MoreLoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activity.TakeMePhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TakeMePhoto_Style">
+
+        </activity>
+        <activity
+            android:name=".Activity.UpMySexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TakeMePhoto_Style">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.UpMyPasswordActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.UpMyNicknameActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.ProductDetailsActicity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.BuyOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.MeAddressManagerActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.UpAddressManager"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.SelectAddress"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+
+
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".Activity.PayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.QRcode_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.ForgetPassActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.ForgetPassCheckActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.ResetPass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpMyCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ClassificationActivity"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

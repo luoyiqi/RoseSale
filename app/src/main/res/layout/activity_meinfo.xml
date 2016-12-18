@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/meInfo_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <!--账户设置-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="账户设置"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <!--个人资料-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="个人资料"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!--粗线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <!--头像-->
+            <RelativeLayout
+                android:id="@+id/meInfo_imageRL"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <com.wpl.rosesale.Utils.RoundImageView
+                    android:id="@+id/meInfo_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_rose_icon_no"
+                    imagecontrol:border_outside_color="#EEE"
+                    imagecontrol:border_thickness="2dp" />
+
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--邮箱-->
+            <RelativeLayout
+                android:id="@+id/meInfo_emailRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="邮箱"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--昵称-->
+            <RelativeLayout
+                android:id="@+id/meInfo_nickNameRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+            <!--性别-->
+            <RelativeLayout
+                android:id="@+id/meInfo_sexRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+            <!--年龄-->
+            <RelativeLayout
+                android:id="@+id/meInfo_ageRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="年龄"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+            <!--城市-->
+            <RelativeLayout
+                android:id="@+id/meInfo_cityRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="城市"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+            <!--出生日期-->
+            <RelativeLayout
+                android:id="@+id/meInfo_brithDayRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="出生日期"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_brithDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--账户安全-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="账户安全"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!--粗线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <!--手机号-->
+            <RelativeLayout
+                android:id="@+id/meInfo_phoneRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+            <!--密码-->
+            <RelativeLayout
+                android:id="@+id/meInfo_passwordRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="密码"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meInfo_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#555" />
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--其他信息设置-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="其他信息设置"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!--粗线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <!--地址管理-->
+            <RelativeLayout
+                android:id="@+id/meInfo_addressRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="地址管理"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--喜欢的花种-->
+            <RelativeLayout
+                android:id="@+id/meInfo_likeRoseTypeRL"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="喜欢的花种"
+                    android:textColor="#111111"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <!--细线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <!--退出登录-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <LinearLayout
+                    android:id="@+id/meInfo_exitLoginLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="#111111"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="退出登录"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+    <!--还没有该订单-->
+    <LinearLayout
+        android:id="@+id/myOrder_all_notAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/empty_order_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还没有订单"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.wpl.rosesale.View.MyOrder_ListView
+        android:id="@+id/myOrder_all_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#EEE"
+        android:dividerHeight="10dp" />
+
+</RelativeLayout>

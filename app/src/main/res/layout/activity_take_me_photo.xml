@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/takeMePhoto_popLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EEE"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--拍照-->
+        <LinearLayout
+            android:id="@+id/takeMePhoto_pz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/tab_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="拍照"
+                android:textColor="#222"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!--分割线-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEE" />
+
+        <!--相册-->
+        <LinearLayout
+            android:id="@+id/takeMePhoto_xc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/tab_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="相册"
+                android:textColor="#222"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
